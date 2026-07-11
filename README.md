@@ -290,10 +290,6 @@ SUVAIO-Food-Delivery-System/
 
 │
 
-├── screenshots/
-
-│
-
 ├── README.md
 
 │
@@ -692,7 +688,7 @@ A complete walkthrough of the application demonstrating:
 
 
 
-\*\*Vishnu K\*\*
+\*\*Shivaani S\*\*
 
 
 
