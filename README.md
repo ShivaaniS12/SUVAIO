@@ -696,19 +696,19 @@ Information Science Engineering
 
 
 
-Java Full Stack Developer | Cybersecurity Enthusiast
+Java Full Stack Developer 
 
 
 
 GitHub:
+https://github.com/ShivaaniS12
 
-https://github.com/hackiller007-vk
 
 
 
 LinkedIn:
 
-https://www.linkedin.com/in/vishnu-k04/
+www.linkedin.com/in/shivaani-s-2004ss
 
 
 
