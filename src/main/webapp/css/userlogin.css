@@ -1,0 +1,150 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:black;
+
+font-family:Segoe UI;
+}
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.magic-card{
+
+width:400px;
+
+padding:40px;
+
+border-radius:20px;
+
+background:
+rgba(255,255,255,0.05);
+
+backdrop-filter:blur(15px);
+
+border:
+1px solid rgba(255,255,255,0.1);
+
+box-shadow:
+0 0 30px rgba(255,100,0,0.2);
+
+text-align:center;
+
+color:white;
+}
+
+.magic-card h1{
+margin-bottom:10px;
+}
+
+.magic-card p{
+margin-bottom:20px;
+}
+
+.magic-card input{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:
+rgba(255,255,255,0.1);
+
+color:white;
+}
+
+.magic-card button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:#ff6b35;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+}
+
+.magic-card button:hover{
+
+transform:scale(1.03);
+}
+
+.success{
+
+color:#00ff95;
+
+text-align:center;
+
+margin-bottom:20px;
+
+font-weight:600;
+
+}
+
+.success-message{
+
+    width:400px;
+
+    margin:20px auto;
+
+    background:#0f5132;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    border:1px solid #198754;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

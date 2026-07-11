@@ -1,0 +1,504 @@
+/* ===========================================
+           SUVAIO LANDING PAGE
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root{
+
+    --primary:#ff6b35;
+    --secondary:#ff9a3c;
+
+    --dark:#080808;
+    --dark2:#111111;
+
+    --white:#ffffff;
+    --grey:#cfcfcf;
+
+    --glass:rgba(255,255,255,.08);
+
+    --border:rgba(255,255,255,.12);
+
+    --shadow:0 10px 40px rgba(0,0,0,.45);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:var(--dark);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:white;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+/* ===========================================
+                NAVBAR
+=========================================== */
+
+header{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+padding:22px 7%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:999;
+
+transition:.5s;
+
+}
+
+header.scrolled{
+
+background:rgba(0,0,0,.55);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+font-size:34px;
+
+font-weight:700;
+
+font-family:'Playfair Display',serif;
+
+letter-spacing:2px;
+
+color:white;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:45px;
+
+}
+
+nav ul li a{
+
+font-size:15px;
+
+font-weight:500;
+
+transition:.35s;
+
+position:relative;
+
+}
+
+nav ul li a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+height:2px;
+
+width:0;
+
+background:var(--primary);
+
+transition:.35s;
+
+}
+
+nav ul li a:hover{
+
+color:var(--primary);
+
+}
+
+nav ul li a:hover::after{
+
+width:100%;
+
+}
+
+.login-btn{
+
+padding:14px 34px;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#ff6b35,#ff914d);
+
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 0 30px rgba(255,107,53,.35);
+
+}
+
+.login-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(255,107,53,.55);
+
+}
+
+/* ===========================================
+                HERO
+=========================================== */
+
+#hero{
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+#hero video{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+z-index:-3;
+
+}
+
+.overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+linear-gradient(to bottom,
+rgba(0,0,0,.55),
+rgba(0,0,0,.75));
+
+z-index:-2;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+padding:20px;
+
+animation:fadeUp 1.4s ease;
+
+}
+
+.hero-content h1{
+
+font-size:72px;
+
+line-height:82px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:20px;
+
+}
+
+.hero-content h1 span{
+
+display:block;
+
+background:linear-gradient(90deg,#ffffff,#ffb067);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero-content p{
+
+font-size:20px;
+
+line-height:36px;
+
+color:#e6e6e6;
+
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.primary-btn{
+
+background:linear-gradient(135deg,#ff6b35,#ff9a3c);
+
+box-shadow:0 10px 30px rgba(255,107,53,.45);
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-6px);
+
+}
+
+.secondary-btn{
+
+border:2px solid white;
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+
+color:black;
+
+}
+
+.scroll-down{
+
+position:absolute;
+
+bottom:35px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:34px;
+
+animation:bounce 2s infinite;
+
+}
+
+/* ===========================================
+                ABOUT
+=========================================== */
+
+#about{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+#about h2{
+
+font-size:48px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:35px;
+
+text-align:center;
+
+}
+
+#about p{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:19px;
+
+line-height:38px;
+
+color:#d9d9d9;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,-18px);
+
+}
+
+}
+
+@media(max-width:991px){
+
+nav{
+
+display:none;
+
+}
+
+.hero-content h1{
+
+font-size:52px;
+
+line-height:62px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+
+font-size:40px;
+
+line-height:48px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.logo{
+
+font-size:28px;
+
+}
+
+.login-btn{
+
+padding:12px 24px;
+
+}
+
+}
+

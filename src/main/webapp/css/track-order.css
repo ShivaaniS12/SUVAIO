@@ -1,0 +1,627 @@
+@charset "UTF-8";
+/* ==========================================
+            SUVAIO TRACK ORDER
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#000;
+
+    color:#fff;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+                NAVBAR
+========================================== */
+
+.navbar{
+
+    height:75px;
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 45px;
+
+    border-bottom:1px solid #222;
+
+}
+
+.navbar h2{
+
+    color:#ff8000;
+
+    letter-spacing:2px;
+
+    font-size:30px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#ff8000;
+
+}
+
+/* ==========================================
+              CONTAINER
+========================================== */
+
+.tracking-container{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+.tracking-container h1{
+
+    font-size:40px;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+             ORDER CARD
+========================================== */
+
+.order-card{
+
+    background:#171717;
+
+    border:1px solid #2b2b2b;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+    transition:.35s;
+
+}
+
+.order-card:hover{
+
+    border-color:#ff8000;
+
+    box-shadow:0 15px 35px rgba(255,128,0,.18);
+
+}
+
+.order-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.order-card p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+}
+
+/* ==========================================
+            STATUS BADGE
+========================================== */
+
+.status-badge{
+
+    background:#ff8000;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    box-shadow:0 0 18px rgba(255,128,0,.35);
+
+}
+
+/* ==========================================
+             TIMELINE
+========================================== */
+
+.timeline{
+
+    position:relative;
+
+    margin-left:35px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:17px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#333;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+           TIMELINE ITEM
+========================================== */
+
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    gap:30px;
+
+    margin-bottom:45px;
+
+}
+
+.circle{
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    background:#ff8000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    z-index:2;
+
+    box-shadow:0 0 20px rgba(255,128,0,.4);
+
+}
+
+.circle i{
+
+    font-size:15px;
+
+}
+
+.content{
+
+    flex:1;
+
+    background:#171717;
+
+    border:1px solid #2a2a2a;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:.3s;
+
+}
+
+.content:hover{
+
+    border-color:#ff8000;
+
+    transform:translateX(6px);
+
+}
+
+.content h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.content p{
+
+    color:#cfcfcf;
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+}
+
+.content span{
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+          ANIMATION
+========================================== */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.order-card{
+
+    animation:slideUp .6s ease;
+
+}
+
+.timeline-item{
+
+    animation:slideUp .8s ease;
+
+}
+
+/* ==========================================
+        GLOWING PROGRESS EFFECT
+========================================== */
+
+.timeline-item:first-child .circle{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:
+        0 0 10px rgba(255,128,0,.35);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 30px rgba(255,128,0,.8);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 10px rgba(255,128,0,.35);
+
+    }
+
+}
+
+/* ==========================================
+        BOTTOM BUTTON
+========================================== */
+
+.bottom-buttons{
+
+    margin-top:50px;
+
+    text-align:center;
+
+}
+
+.bottom-buttons a{
+
+    display:inline-block;
+
+    padding:16px 40px;
+
+    border-radius:14px;
+
+    background:#ff8000;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(255,128,0,.30);
+
+}
+
+.bottom-buttons a:hover{
+
+    background:#ff9933;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(255,128,0,.45);
+
+}
+
+/* ==========================================
+        CUSTOM SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#333;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff8000;
+
+}
+
+/* ==========================================
+          RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.order-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.status-badge{
+
+    align-self:flex-start;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:12px;
+
+    height:auto;
+
+    padding:18px;
+
+}
+
+.tracking-container{
+
+    width:95%;
+
+}
+
+.tracking-container h1{
+
+    font-size:30px;
+
+    text-align:center;
+
+}
+
+.timeline{
+
+    margin-left:10px;
+
+}
+
+.timeline-item{
+
+    gap:15px;
+
+}
+
+.circle{
+
+    width:32px;
+
+    height:32px;
+
+}
+
+.circle i{
+
+    font-size:12px;
+
+}
+
+.content{
+
+    padding:16px;
+
+}
+
+.content h3{
+
+    font-size:19px;
+
+}
+
+.content p{
+
+    font-size:14px;
+
+}
+
+.content span{
+
+    font-size:12px;
+
+}
+
+.bottom-buttons a{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.order-card{
+
+    padding:20px;
+
+}
+
+.order-card h2{
+
+    font-size:22px;
+
+}
+
+.order-card p{
+
+    font-size:15px;
+
+}
+
+.status-badge{
+
+    font-size:14px;
+
+    padding:10px 18px;
+
+}
+
+.timeline-item{
+
+    margin-bottom:30px;
+
+}
+
+.content h3{
+
+    font-size:18px;
+
+}
+
+}
+
+/* ==========================================
+         PREMIUM POLISH
+========================================== */
+
+.order-card,
+.content{
+
+    backdrop-filter:blur(12px);
+
+}
+
+.order-card::before{
+
+    content:"";
+
+    display:block;
+
+    position:absolute;
+
+}
+
+.content:hover{
+
+    box-shadow:0 15px 35px rgba(255,128,0,.12);
+
+}
+
+button,
+a,
+.content,
+.circle{
+
+    transition:all .3s ease;
+
+}
