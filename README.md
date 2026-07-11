@@ -492,7 +492,7 @@ suvaio
 
 ```bash
 
-git clone https://github.com/your-username/SUVAIO-Food-Delivery-System.git
+git clone https://github.com/your-username/SUVAIO.git
 
 ```
 
@@ -520,7 +520,7 @@ git clone https://github.com/your-username/SUVAIO-Food-Delivery-System.git
 
 ```
 
-http://localhost:8080/SUVAIO/
+http://localhost:8080/TastyHop/
 
 ```
 
